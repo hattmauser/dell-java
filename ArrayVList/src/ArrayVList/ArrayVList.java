@@ -1,6 +1,7 @@
 package ArrayVList;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class ArrayVList {
 	public static void main(String[] args) {
@@ -21,7 +22,14 @@ public class ArrayVList {
 	 listOfColors.add("red");
 	 listOfColors.add("blue");
 	 listOfColors.add("yellow");
-	 
+	 System.out.println("Hey Matt, it's future matt. Just checking in. Stay safe. Cheers.");
+	 System.out.println("Do you have anything to say to him?");
+	 Scanner reader = new Scanner(System.in);
+	 String yourPick = reader.nextLine();
+	 reader.close();
+	 System.out.println('"'+ yourPick + '"');
+	 System.out.println("me too, thanks");
+	
 	 //just examples of getting size and getting specific value of array location
 	 int s = listOfColors2.size();
 	 String blue = listOfColors.get(1);
@@ -104,7 +112,7 @@ public class ArrayVList {
 				return;
 			} else {
 				String[] tmp = new String[size];
-				for(int j = 0; j < size; i++) {
+				for(int j = 0; j < size-1; i++) {
 					if(j != i) {
 						tmp[j] = store[i];
 					}
